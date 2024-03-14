@@ -6,7 +6,7 @@
 
 body{
     background-color:rgb(127, 255, 212) ;
-    height:100vh;
+    
 }
 
 main{
@@ -23,6 +23,7 @@ main{
     align-items: center;
     background-color: #FFFFFF;
     height:10vh;
+    position: relative;
 }
 
 .container{
@@ -43,8 +44,12 @@ main{
 }
 
 
-.bg-black{
-    background-color: black;
+.bg-red{
+    background-color: red;
+}
+
+.bg-cyan{
+    background-color: cyan;
 }
 
 footer{
