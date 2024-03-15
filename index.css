@@ -10,7 +10,8 @@ body{
 }
 
 main{
-    height:80vh
+    height:80vh;
+    
 }
 
 .header img{
@@ -23,7 +24,7 @@ main{
     align-items: center;
     background-color: #FFFFFF;
     height:10vh;
-    position: relative;
+    
 }
 
 .container{

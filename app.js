@@ -1,5 +1,5 @@
 const gridElement = document.querySelector('.container')
-const bodyElement = document.body
+const  mainElement = document.querySelector('main');
 const playButton = document.getElementById('play')
 const CellsEasy = 100
 const CellsNormal = 81
@@ -48,13 +48,12 @@ playButton.addEventListener('click', function () {
                 gridElement.classList.add('opacity-25');
                 cellEl.classList.add('bg-red')
                 const messageLose = document.createElement('div')
-                messageLose.className = 'm-auto d-flex flex-column opacity-100'
-                messageLose.className += ' position-absolute top-50 start-50';
+                messageLose.className = ' opacity-100 position-absolute '
                 messageLose.innerHTML = `
             <h1 class= "d-flex justify-content-center">Hai perso!</h1>
             <button class="restart btn btn-primary m-auto d-flex">Restart</button>
             `
-                bodyElement.appendChild(messageLose)
+                mainElement.appendChild(messageLose)
                 for (let i = 0; i < bombs.length; i++) {
                     console.log(bombs[i]);
                 }
@@ -77,11 +76,6 @@ playButton.addEventListener('click', function () {
             gridElement.appendChild(messageWin)
             
             }
-            
-            //In seguito l’utente clicca su una cella:
-            //se il numero è presente nella lista dei numeri generati
-
-            //- abbiamo calpestato una bomba - la cella si colora di rosso.
 
 
         })
