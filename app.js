@@ -62,7 +62,7 @@ playButton.addEventListener('click', function () {
             else {
                 cellEl.classList.add('bg-cyan')
                 celleSelezionateSenzaBomba++
-                
+                console.log(celleSelezionateSenzaBomba)
                 
             }
             if (celleSelezionateSenzaBomba === CellsEasy - bombsCount) {
@@ -77,20 +77,9 @@ playButton.addEventListener('click', function () {
             
             }
 
-
         })
 
     }
 
 })
-
-
-
-//Il computer deve generare 16 numeri casuali nello stesso range della difficoltà prescelta: le bombe.
-
-
-
-
-
-
 

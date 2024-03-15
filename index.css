@@ -6,11 +6,15 @@
 
 body{
     background-color:rgb(127, 255, 212) ;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     
 }
 
 main{
-    height:80vh;
+    height:calc(100% - 200px);
+    flex-grow: 1;
     
 }
 
@@ -23,7 +27,7 @@ main{
     display: flex;
     align-items: center;
     background-color: #FFFFFF;
-    height:10vh;
+    height:100px;
     
 }
 
@@ -56,6 +60,7 @@ main{
 footer{
     display:flex;
     align-items: center;
-    height:10vh;
+    height:100px;
     padding: 20px;
+    
 }
